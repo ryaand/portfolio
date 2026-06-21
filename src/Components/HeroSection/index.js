@@ -13,7 +13,7 @@ const HeroSection = () => {
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.7, ease: easeOut }}
                 className="flex flex-col w-screen h-screen justify-center items-center gap-7">
-                <div className="text-center font-extralight tracking-[0.5em] text-sm">
+                <div className="text-center font-extralight tracking-[0.5em] text-sm px-4">
                     <p>FRONTEND DEVELOPER | WEBSITE DEVELOPER</p>
                 </div>
                 <div className="text-center text-6xl font-bold">
@@ -27,7 +27,7 @@ const HeroSection = () => {
                     <a href="#projects"><DarkDefaultButton>Projects</DarkDefaultButton></a>
                     <a href="#archived"><LightDefaultButton>Archived</LightDefaultButton></a>
                 </div>
-                <div className="absolute bottom-7 text-center opacity-40 font-extralight tracking-[0.5em] ">
+                <div className="absolute bottom-7 text-center opacity-40 font-extralight tracking-[0.5em]">
                     |<br></br>
                     scroll
                 </div>
