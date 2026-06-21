@@ -28,7 +28,7 @@ const Navbar = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease:easeInOut }}
-            className="fixed justify-between items-center w-full">
+            className="fixed justify-between items-center w-full z-50">
             <div className="flex justify-center px-6 items-center w-full text-gray-600 text-[14px] pt-4">
                 <div className={navbarClass}>
                     <div className="md:hidden font-extrabold">rianArchive</div>
