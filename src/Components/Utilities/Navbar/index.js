@@ -12,7 +12,7 @@ const Navbar = () => {
 
     useMotionValueEvent(scrollY, "change", (latest) => {
         console.log(latest)
-        if (latest > 0) {
+        if (latest > 30) {
             setScrolled(true)
         } else {
             setScrolled(false)
