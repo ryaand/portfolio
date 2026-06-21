@@ -7,7 +7,7 @@ import { useState } from "react"
 const Navbar = () => {
     const { scrollY } = useScroll()
     const [scrolled, setScrolled] = useState(false)
-    const topNavbar = "flex justify-center px-8 py-2.5 rounded-full items-center text-gray-600 text-[14px] transition-all ease-in-out duration-500"
+    const topNavbar = "flex justify-center px-8 py-2.5 rounded-full items-center text-gray-600 text-[14px] transition-all ease-in-out duration-800"
 
     useMotionValueEvent(scrollY, "change", (latest) => {
         console.log("Page scroll: ", latest)
@@ -18,7 +18,7 @@ const Navbar = () => {
         }
     })
 
-    let navbarClass = scrolled ? `${topNavbar} backdrop-blur-md bg-zinc-200 border-zinc-400 border` : `${topNavbar} border-transparent`
+    let navbarClass = scrolled ? `${topNavbar} backdrop-blur-md bg-zinc-200/40 border-zinc-400 border shadow-lg` : `${topNavbar} border-transparent shadow-none`
 
     return (
         <motion.nav
