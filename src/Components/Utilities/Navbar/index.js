@@ -29,7 +29,7 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
             className="fixed justify-between items-center w-full">
-            <div className="flex justify-center px-6 items-center w-full text-gray-600 text-[14px] pt-6">
+            <div className="flex justify-center px-6 items-center w-full text-gray-600 text-[14px] pt-4">
                 <div className={navbarClass}>
                     <div className="md:hidden font-extrabold">rianArchive</div>
                     <ul className="gap-10 justify-center font-semibold hidden md:flex">
@@ -56,7 +56,7 @@ const Navbar = () => {
                 animate={{ opacity: toggleNavbar ? 1 : 0, y: toggleNavbar ? 0 : -10 }}
                 transition={{ duration: 0.15 }}
                 className={toggleNavbar ? "md:hidden" : "hidden"}>
-                <div className="flex bg-zinc-400/20 backdrop-blur-md border-zinc-400 border shadow-lg m-6 rounded-2xl transition-all duration-300">
+                <div className="flex bg-zinc-400/20 backdrop-blur-sm border-zinc-400 border shadow-lg m-6 rounded-2xl">
                     <ul className="flex flex-col w-full gap-1 py-6 px-6 justify-center text-sm font-semibold">
                         <a href="#about">
                             <li className="opacity-75 hover:opacity-100 transition-all duration-150 hover:bg-zinc-300 py-2 px-4 rounded-xl">About</li>
