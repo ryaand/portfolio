@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "motion/react"
+import { easeInOut, motion } from "motion/react"
 import { useScroll, useMotionValueEvent } from "motion/react"
 import { useState } from "react"
 
@@ -27,7 +27,7 @@ const Navbar = () => {
         <motion.nav
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1, ease:easeInOut }}
             className="fixed justify-between items-center w-full">
             <div className="flex justify-center px-6 items-center w-full text-gray-600 text-[14px] pt-4">
                 <div className={navbarClass}>
