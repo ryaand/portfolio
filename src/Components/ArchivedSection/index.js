@@ -29,12 +29,12 @@ const ArchivedSection = () => {
                                     <div className="font-black text-lg">
                                         HTML CSS Website
                                     </div>
-                                    <div className="font-light">
+                                    <div className="font-extralight text-sm">
                                         First project only using HTML and CSS
                                     </div>
                                 </div>
                                 <div className="text-zinc-400 text-right">
-                                    Archived on Github
+                                    Archived<br></br>on Github
                                 </div>
                             </div>
                             <div className="text-zinc-400">
@@ -59,12 +59,12 @@ const ArchivedSection = () => {
                                     <div className="font-black text-lg">
                                         Wordpress Website
                                     </div>
-                                    <div className="font-light">
+                                    <div className="font-extralight text-sm">
                                         Article web build using WordPress
                                     </div>
                                 </div>
                                 <div className="text-zinc-400 text-right">
-                                    Archived on Github
+                                    Archived<br></br>on Github
                                 </div>
                             </div>
                             <div className="text-zinc-400">
@@ -88,12 +88,12 @@ const ArchivedSection = () => {
                                     <div className="font-black text-lg">
                                         UI Web Prototype
                                     </div>
-                                    <div className="font-light">
+                                    <div className="font-extralight text-sm">
                                         Figma prototype design
                                     </div>
                                 </div>
                                 <div className="text-zinc-400 text-right">
-                                    Archived on Github
+                                    Archived<br></br>on Github
                                 </div>
                             </div>
                             <div className="text-zinc-400">
