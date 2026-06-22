@@ -4,7 +4,7 @@ import { easeIn, easeInOut, easeOut, motion } from "motion/react"
 
 const AboutSection = () => {
     return (
-        <section className="w-screen flex justify-center items-center border-b border-zinc-400">
+        <section className="w-screen flex justify-center items-center border-b border-zinc-400/30">
             <div className="flex items-center  max-w-3xl w-full h-full text-zinc-400">
                 <div className="flex flex-col justify-between h-full p-14 gap-10">
                     <motion.div 
@@ -34,7 +34,7 @@ const AboutSection = () => {
                     whileInView={{ opacity: 1, y:0 }}
                     viewport={{ margin: "-200px" }}
                     transition={{ duration:0.7, ease:easeOut }}
-                    className="grid grid-cols-2 gap-4 border-t pt-10 border-zinc-400">
+                    className="grid grid-cols-2 gap-4 border-t pt-10 border-zinc-400/30">
                         <div>
                             <div className="font-black text-2xl text-black">0+</div>
                             <div className="font-light">Projects</div>
