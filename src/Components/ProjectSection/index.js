@@ -17,7 +17,7 @@ const ProjectSection = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 5 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ margin: "-100px" }}
+                    viewport={{ margin: "-200px" }}
                     transition={{ duration: 0.7, ease:easeOut }}
                     className="opacity-60 flex flex-col h-full items-center justify-center gap-2">
                     <div className="flex font-extralight justify-center w-fit items-center gap-2">

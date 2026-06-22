@@ -16,15 +16,15 @@ const ArchivedSection = () => {
                     className="font-extralight tracking-[0.5em]">
                     ARCHIVED PROJECT
                 </motion.div>
-                <div className="flex flex-col gap-10 zoom-75">
+                <div className="flex flex-col gap-10">
                     <Link href="https://github.com/ryanarchv/hello-worldweb">
                         <motion.div
                                 initial={{ opacity: 0, y: 5 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ margin: "-200px" }}
                                 transition={{ duration: 0.7, ease: easeOut }}
-                                className="hover:underline gap-3 flex flex-col">
-                            <div className="flex justify-between">
+                                className="hover:underline gap-3 flex flex-col active:underline">
+                            <div className="flex justify-between items-center">
                                 <div>
                                     <div className="font-black text-lg">
                                         HTML CSS Website
@@ -53,8 +53,8 @@ const ArchivedSection = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ margin: "-200px" }}
                                 transition={{ duration: 0.7, ease: easeOut }}
-                                className="hover:underline gap-3 flex flex-col">
-                            <div className="flex justify-between">
+                                className="hover:underline gap-3 flex flex-col active:underline">
+                            <div className="flex justify-between items-center">
                                 <div>
                                     <div className="font-black text-lg">
                                         Wordpress Website
@@ -63,7 +63,7 @@ const ArchivedSection = () => {
                                         Article web build using WordPress
                                     </div>
                                 </div>
-                                <div className="text-zinc-400">
+                                <div className="text-zinc-400 text-right">
                                     Archived on Github
                                 </div>
                             </div>
@@ -82,8 +82,8 @@ const ArchivedSection = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ margin: "-200px" }}
                                 transition={{ duration: 0.7, ease: easeOut }}
-                                className="hover:underline gap-3 flex flex-col">
-                            <div className="flex justify-between">
+                                className="hover:underline gap-3 flex flex-col active:underline">
+                            <div className="flex justify-between items-center">
                                 <div>
                                     <div className="font-black text-lg">
                                         UI Web Prototype
@@ -92,7 +92,7 @@ const ArchivedSection = () => {
                                         Figma prototype design
                                     </div>
                                 </div>
-                                <div className="text-zinc-400">
+                                <div className="text-zinc-400 text-right">
                                     Archived on Github
                                 </div>
                             </div>
