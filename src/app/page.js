@@ -2,12 +2,14 @@
 
 import AboutSection from "@/Components/AboutSection";
 import HeroSection from "@/Components/HeroSection";
+import SkillsSection from "@/Components/SkillsSection";
 
 export default function Home() {
   return (
     <section className="h-2000 overflow-x-hidden">
       <HeroSection></HeroSection>
       <AboutSection></AboutSection>
+      <SkillsSection></SkillsSection>
     </section>
   );
 }
