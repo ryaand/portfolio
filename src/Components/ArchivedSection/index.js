@@ -1,6 +1,6 @@
 "use client"
 
-import { easeOut,motion } from "motion/react"
+import { easeOut, motion } from "motion/react"
 import LightDefaultButton2 from "../Utilities/LightDefaultButton2"
 import Link from "next/link"
 
@@ -16,15 +16,23 @@ const ArchivedSection = () => {
                     className="font-extralight tracking-[0.5em]">
                     ARCHIVED PROJECT
                 </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 5 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ margin: "-100px" }}
+                    transition={{ duration: 0.7, ease: easeOut }}
+                    className="font-extralight tracking-wide">
+                    You can see my archive repository on <a href="https://github.com/ryanarchv" className="underline font-bold">github</a> also.
+                </motion.div>
                 <div className="flex flex-col gap-10">
-                    <Link href="https://github.com/ryanarchv/hello-worldweb">
+                    <Link href="https://josuraa.github.io/Josura-Offc-Web/">
                         <motion.div
-                                initial={{ opacity: 0, y: 5 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ margin: "-200px" }}
-                                transition={{ duration: 0.7, ease: easeOut }}
-                                className="hover:underline gap-3 flex flex-col active:underline">
-                            <div className="flex justify-between items-center">
+                            initial={{ opacity: 0, y: 5 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ margin: "-200px" }}
+                            transition={{ duration: 0.7, ease: easeOut }}
+                            className="hover:underline gap-3 flex flex-col active:underline">
+                            <div className="flex gap-4 items-center">
                                 <div>
                                     <div className="font-black text-lg">
                                         HTML CSS Website
@@ -34,7 +42,7 @@ const ArchivedSection = () => {
                                     </div>
                                 </div>
                                 <div className="text-zinc-400 text-right">
-                                    Archived<br></br>on Github
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right text-zinc-500 shrink-0 mt-1" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
                                 </div>
                             </div>
                             <div className="text-zinc-400">
@@ -49,12 +57,12 @@ const ArchivedSection = () => {
                     </Link>
                     <Link href="https://healthyhighfive.netlify.app/">
                         <motion.div
-                                initial={{ opacity: 0, y: 5 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ margin: "-200px" }}
-                                transition={{ duration: 0.7, ease: easeOut }}
-                                className="hover:underline gap-3 flex flex-col active:underline">
-                            <div className="flex justify-between items-center">
+                            initial={{ opacity: 0, y: 5 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ margin: "-200px" }}
+                            transition={{ duration: 0.7, ease: easeOut }}
+                            className="hover:underline gap-3 flex flex-col active:underline">
+                            <div className="flex gap-4 items-center">
                                 <div>
                                     <div className="font-black text-lg">
                                         Wordpress Website
@@ -64,7 +72,7 @@ const ArchivedSection = () => {
                                     </div>
                                 </div>
                                 <div className="text-zinc-400 text-right">
-                                    Archived<br></br>on Github
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right text-zinc-500 shrink-0 mt-1" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
                                 </div>
                             </div>
                             <div className="text-zinc-400">
@@ -76,14 +84,14 @@ const ArchivedSection = () => {
                             </div>
                         </motion.div>
                     </Link>
-                    <Link href="https://github.com/ryanarchv/idk">
+                    <Link href="https://drive.google.com/file/d/1lqOqszyivCCP-Xx_yUzXEtn_Hol0MsLK/view">
                         <motion.div
-                                initial={{ opacity: 0, y: 5 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ margin: "-200px" }}
-                                transition={{ duration: 0.7, ease: easeOut }}
-                                className="hover:underline gap-3 flex flex-col active:underline">
-                            <div className="flex justify-between items-center">
+                            initial={{ opacity: 0, y: 5 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ margin: "-200px" }}
+                            transition={{ duration: 0.7, ease: easeOut }}
+                            className="hover:underline gap-3 flex flex-col active:underline">
+                            <div className="flex gap-4 items-center">
                                 <div>
                                     <div className="font-black text-lg">
                                         UI Web Prototype
@@ -93,7 +101,7 @@ const ArchivedSection = () => {
                                     </div>
                                 </div>
                                 <div className="text-zinc-400 text-right">
-                                    Archived<br></br>on Github
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right text-zinc-500 shrink-0 mt-1" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
                                 </div>
                             </div>
                             <div className="text-zinc-400">
