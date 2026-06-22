@@ -8,19 +8,19 @@ const AboutSection = () => {
             <div className="flex items-center  max-w-3xl w-full h-full text-zinc-400">
                 <div className="flex flex-col justify-between h-full p-14 gap-10">
                     <motion.div 
-                    initial={{ opacity: 0, x:-20 }}
+                    initial={{ opacity: 0, x:-5 }}
                     whileInView={{ opacity: 1, x:0 }}
-                    viewport={{ margin: "-110px" }}
-                    transition={{ duration:0.8 }}
-                    className="font-extralight tracking-[0.5em] text-zinc-400">
+                    viewport={{ margin: "-100px" }}
+                    transition={{ duration:0.7 }}
+                    className="font-extralight tracking-[0.5em]">
                         ABOUT
                     </motion.div>
                     <motion.div 
-                    initial={{ opacity: 0, y:15 }}
+                    initial={{ opacity: 0, y:5 }}
                     whileInView={{ opacity: 1, y:0 }}
                     viewport={{ margin: "-300px" }}
                     transition={{ duration:0.7, ease:easeOut }}
-                    className="text-justify text-zinc-400">
+                    className="text-justify font-semibold">
                         I am an Informatics Engineering student at Politeknik Negeri Malang with a strong interest in Front-End Development. I enjoy creating clean, minimal, and user-focused interfaces — combining functionality, simplicity, and thoughtful design into meaningful digital experiences.
                         <br></br>
                         <br></br>
@@ -30,7 +30,7 @@ const AboutSection = () => {
                         Beyond personal growth, I am passionate about collaboration — learning from others, sharing ideas, and building impactful projects as part of a team. My goal is to contribute to products that create real value while growing alongside people who are equally driven to learn and innovate.
                     </motion.div>
                     <motion.div 
-                    initial={{ opacity: 0, y:10 }}
+                    initial={{ opacity: 0, y:5 }}
                     whileInView={{ opacity: 1, y:0 }}
                     viewport={{ margin: "-200px" }}
                     transition={{ duration:0.7, ease:easeOut }}
