@@ -7,7 +7,7 @@ import HeroSection from "@/Components/HeroSection";
 import ProjectSection from "@/Components/ProjectSection";
 import SkillsSection from "@/Components/SkillsSection";
 import Footer from "@/Components/Utilities/Footer";
-import { useState } from "react";
+import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
