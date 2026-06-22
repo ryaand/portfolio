@@ -5,7 +5,7 @@ import LightDefaultButton2 from "../Utilities/LightDefaultButton2"
 
 const SkillsSection = () => {
     return (
-        <sectin className="w-screen flex justify-center items-center border-b border-zinc-400/30">
+        <section id="skills" className="w-screen flex justify-center items-center border-b border-zinc-400/30">
             <div className="flex flex-col justify-between h-full w-full p-14 gap-10 max-w-3xl">
                 <motion.div
                     initial={{ opacity: 0, x: -5 }}
@@ -76,7 +76,7 @@ const SkillsSection = () => {
                     </div>
                 </motion.div>
             </div>
-        </sectin>
+        </section>
     )
 }
 

@@ -4,7 +4,7 @@ import { easeOut, motion } from "motion/react"
 
 const ProjectSection = () => {
     return (
-        <section className="w-screen h-screen flex justify-center items-center border-b border-zinc-400/30">
+        <section id="projects" className="w-screen h-screen flex justify-center items-center border-b border-zinc-400/30">
             <div className="flex flex-col h-full w-full p-14 gap-10 max-w-3xl">
                 <motion.div
                     initial={{ opacity: 0, x: -5 }}
