@@ -16,7 +16,7 @@ const ArchivedSection = () => {
                     className="font-extralight tracking-[0.5em]">
                     ARCHIVED PROJECT
                 </motion.div>
-                <div className="flex flex-col gap-10">
+                <div className="flex flex-col gap-10 zoom-75">
                     <Link href="https://github.com/ryanarchv/hello-worldweb">
                         <motion.div
                                 initial={{ opacity: 0, y: 5 }}
