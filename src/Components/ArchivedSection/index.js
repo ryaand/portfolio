@@ -33,7 +33,7 @@ const ArchivedSection = () => {
                                         First project only using HTML and CSS
                                     </div>
                                 </div>
-                                <div className="text-zinc-400">
+                                <div className="text-zinc-400 text-right">
                                     Archived on Github
                                 </div>
                             </div>
