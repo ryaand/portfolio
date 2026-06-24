@@ -16,7 +16,7 @@ const HeroSection = () => {
                 <div className="text-center font-extralight tracking-[0.5em] text-sm px-4">
                     <p>FRONTEND DEVELOPER | WEBSITE DEVELOPER</p>
                 </div>
-                <div className="text-center text-6xl font-bold">
+                <div className="text-center text-6xl font-black">
                     <p>Rian<br></br>Archive</p>
                 </div>
                 <div className="text-center w-[80%] text-zinc-500 text-[17px] max-w-2xl">
