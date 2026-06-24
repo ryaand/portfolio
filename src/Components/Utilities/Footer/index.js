@@ -1,7 +1,4 @@
-import Image from "next/image"
-import Email from "@/assets/email.png"
 import Link from "next/link"
-import Github from "@/assets/github.png"
 
 const Footer = () => {
     return (

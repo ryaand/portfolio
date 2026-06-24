@@ -23,6 +23,7 @@ export default function Home() {
       <SkillsSection></SkillsSection>
       <ProjectSection></ProjectSection>
       <ArchivedSection></ArchivedSection>
+      <ContactSection></ContactSection>
       <Footer></Footer>
     </section>
   );
