@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "rianArchive — Front End Development",
-  description: "portfolio",
+  title: "rianArchive — Front End Developer",
+  description: "An 18 years old front-end developer dedicated to continuous improvement, actively deepening skills in UI/UX design and full-stack development.",
 };
 
 export default function RootLayout({ children }) {
