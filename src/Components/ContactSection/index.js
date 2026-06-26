@@ -6,20 +6,32 @@ import { easeOut, motion } from "motion/react"
 const ContactSection = () => {
 
     const [result, setResult] = useState("");
+    const [isSending, setIsSending] = useState(false);
 
     const onSubmit = async (event) => {
         event.preventDefault()
+
+        setIsSending(true)
+
         const formData = new FormData(event.target)
-        formData.append("access_key", "0d679851-9577-4e23-9e21-d5e0ed44eb3e")
+        formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY)
 
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            body: formData
-        })
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            })
 
-        const data = await response.json();
-        setResult(data.success ? "Message sent!" : "")
+            const data = await response.json();
+            setResult(data)
+        } catch (error) {
+            console.error(error)
+        } finally {
+            setIsSending(false)
+        }
     }
+
+    console.log(result)
 
     return (
         <section id="contact" className="w-screen flex justify-center items-center border-b border-zinc-400/30">
@@ -50,8 +62,14 @@ const ContactSection = () => {
                         <input type="email" name="email" placeholder="your_email@example.com" className="focus:outline-2 border rounded-md border-zinc-400/50 p-2 justify-center text-sm font-medium pl-3 tracking-wide" required />
                         <p className="font-bold text-zinc-600 tracking-widest">MASSAGE</p>
                         <textarea name="message" placeholder="Massage..." className="focus:outline-2 border rounded-md border-zinc-400/50 p-2 justify-center text-sm font-medium pl-3 tracking-wide resize-none h-30" required></textarea>
-                        <button type="submit" className="bg-black border border-zinc-400 rounded-md px-4 py-2 cursor-pointer text-white hover:bg-black/80">Submit</button>
-                        <p>{result}</p>
+                        <div className=''>
+                            <div className={(isSending || result) ? "hidden" : "flex"}>
+                                <button type="submit" className="bg-black border border-zinc-400 rounded-md px-4 py-2 cursor-pointer text-white hover:bg-black/80 w-full">Submit</button>
+                            </div>
+                            <div className={(isSending || result) ? "flex" : "hidden"}>
+                                <button type="submit" className="bg-black/50 border border-zinc-400 rounded-md px-4 py-2 text-white w-full" children disabled>{result ? "Submitted!" : "Sending..."}</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
