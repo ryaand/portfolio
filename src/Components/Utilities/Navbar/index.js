@@ -11,7 +11,6 @@ const Navbar = () => {
     const [toggleNavbar, setToggleNavbar] = useState(false)
 
     useMotionValueEvent(scrollY, "change", (latest) => {
-        console.log(latest)
         if (latest > 30) {
             setScrolled(true)
         } else {
