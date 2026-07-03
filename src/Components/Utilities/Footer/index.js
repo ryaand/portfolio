@@ -1,5 +1,3 @@
-import Link from "next/link"
-
 const Footer = () => {
     return (
         <section className="w-screen flex justify-center items-center border-b border-zinc-400/30">

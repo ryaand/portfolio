@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from 'react'
-import { easeOut, motion } from "motion/react"
 
 const ContactSection = () => {
 
