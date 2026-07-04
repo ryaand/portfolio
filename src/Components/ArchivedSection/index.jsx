@@ -24,14 +24,14 @@ const ArchivedSection = () => {
                     className="font-extralight tracking-wide">
                     You can see my archive repository on <a href="https://github.com/ryanarchv" className="underline font-bold">github</a> also.
                 </motion.div>
-                <div className="flex flex-col gap-10">
+                <div className="flex flex-col gap-10 md:gap-2">
                     <Link href="https://josuraa.github.io/Josura-Offc-Web/">
                         <motion.div
                             initial={{ opacity: 0, y: 5 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ margin: "-200px" }}
                             transition={{ duration: 0.7, ease: easeOut }}
-                            className="hover:underline gap-3 flex flex-col active:underline">
+                            className="hover:bg-black/5 transition-all duration-450 rounded-2xl hover:shadow-xs gap-3 flex flex-col md:p-8">
                             <div className="flex gap-4 items-center">
                                 <div>
                                     <div className="font-black text-lg">
@@ -46,7 +46,7 @@ const ArchivedSection = () => {
                                 </div>
                             </div>
                             <div className="text-zinc-400">
-                                A website project developed using only HTML and CSS as part of my journey into web development. The main goal of this project was to understand the core concepts of building web pages, such as structuring content with HTML and enhancing visual appearance with CSS. It demonstrates my ability to create responsive layouts and organized designs while applying fundamental front-end development practices.
+                                A website project developed using only HTML and CSS as part of my journey into web development. The main goal of this project was to understand the core concepts of building web pages, such as structuring content with HTML and enhancing visual appearance with CSS.
                             </div>
                             <div className="zoom-75 flex w-fit gap-3">
                                 <LightDefaultButton2>HTML</LightDefaultButton2>
@@ -61,7 +61,7 @@ const ArchivedSection = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ margin: "-200px" }}
                             transition={{ duration: 0.7, ease: easeOut }}
-                            className="hover:underline gap-3 flex flex-col active:underline">
+                            className="hover:bg-black/5 transition-all duration-450 rounded-2xl hover:shadow-xs gap-3 flex flex-col md:p-8">
                             <div className="flex gap-4 items-center">
                                 <div>
                                     <div className="font-black text-lg">
@@ -90,7 +90,7 @@ const ArchivedSection = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ margin: "-200px" }}
                             transition={{ duration: 0.7, ease: easeOut }}
-                            className="hover:underline gap-3 flex flex-col active:underline">
+                            className="hover:bg-black/5 transition-all duration-450 rounded-2xl hover:shadow-xs gap-3 flex flex-col md:p-8">
                             <div className="flex gap-4 items-center">
                                 <div>
                                     <div className="font-black text-lg">
