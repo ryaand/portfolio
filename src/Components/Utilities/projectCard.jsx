@@ -31,7 +31,7 @@ const ProjectCard = ({ links, title, subtitle, description, stacks }) => {
                         {description}
                     </div>
                     <div className="zoom-75 flex w-fit gap-3">
-                        {stacks && stacks.map((stack) => (
+                        {stacks.map((stack) => (
                             <LightDefaultButton2>{stack}</LightDefaultButton2>
                         ))}
                     </div>
