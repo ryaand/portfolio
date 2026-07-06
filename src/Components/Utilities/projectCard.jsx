@@ -4,10 +4,10 @@ import LightDefaultButton2 from "./LightDefaultButton2"
 import Link from "next/link"
 import { motion, easeOut } from "motion/react"
 
-const ProjectCard = ({ title, subtitle, description, stacks }) => {
+const ProjectCard = ({ links, title, subtitle, description, stacks }) => {
     return (
         <div className="flex flex-col gap-10 md:gap-2">
-            <Link href="https://josuraa.github.io/Josura-Offc-Web/">
+            <Link href={links}>
                 <motion.div
                     initial={{ opacity: 0, y: 5 }}
                     whileInView={{ opacity: 1, y: 0 }}
