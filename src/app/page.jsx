@@ -4,7 +4,6 @@ import ContactSection from "@/Components/ContactSection";
 import HeroSection from "@/Components/HeroSection";
 import ProjectSection from "@/Components/ProjectSection";
 import SkillsSection from "@/Components/SkillsSection";
-import Footer from "@/Components/Utilities/Footer";
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
       <ProjectSection></ProjectSection>
       <ArchivedSection></ArchivedSection>
       <ContactSection></ContactSection>
-      <Footer></Footer>
     </section>
   );
 }
