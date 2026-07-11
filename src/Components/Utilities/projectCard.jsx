@@ -13,7 +13,7 @@ const ProjectCard = ({ links, title, subtitle, description, stacks }) => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ margin: "-200px" }}
                     transition={{ duration: 0.7, ease: easeOut }}
-                    className="hover:bg-black/5 transition-all duration-450 rounded-2xl hover:shadow-xs gap-3 flex flex-col md:p-8">
+                    className="hover:bg-black/5 transition-all duration-450 rounded-2xl hover:shadow-xs gap-3 flex flex-col md:p-8 m-0 p-4">
                     <div className="flex gap-4 items-center">
                         <div>
                             <div className="font-black text-lg">
