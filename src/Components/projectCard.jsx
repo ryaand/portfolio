@@ -1,6 +1,6 @@
 "use client"
 
-import LightDefaultButton2 from "./LightDefaultButton2"
+import LightDefaultButton2 from "./ui/lightDefaultButton2"
 import Link from "next/link"
 import { motion, easeOut } from "motion/react"
 

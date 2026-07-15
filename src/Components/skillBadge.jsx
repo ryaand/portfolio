@@ -1,4 +1,4 @@
-import LightDefaultButton2 from "./LightDefaultButton2"
+import LightDefaultButton2 from "./ui/lightDefaultButton2"
 
 const SkillBadge = ({ skills }) => {
     return (

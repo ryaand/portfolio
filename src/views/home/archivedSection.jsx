@@ -1,7 +1,7 @@
 "use client"
 
 import { easeOut, motion } from "motion/react"
-import ProjectCard from "../Utilities/projectCard"
+import ProjectCard from "../../Components/projectCard"
 
 const ArchivedSection = () => {
     return (

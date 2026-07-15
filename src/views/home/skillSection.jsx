@@ -1,8 +1,8 @@
 "use client"
 
 import { easeOut, motion } from "motion/react"
-import LightDefaultButton2 from "../Utilities/LightDefaultButton2"
-import SkillBadge from "../Utilities/skillBadge"
+import LightDefaultButton2 from "../../Components/ui/lightDefaultButton2"
+import SkillBadge from "../../Components/skillBadge"
 
 const SkillsSection = () => {
     return (

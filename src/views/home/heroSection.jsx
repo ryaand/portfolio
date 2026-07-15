@@ -1,8 +1,8 @@
 "use client"
 
-import DarkDefaultButton from "../Utilities/DarkDefaultButton"
+import DarkDefaultButton from "../../Components/ui/darkDefaultButton"
 import { easeOut, motion } from "motion/react"
-import LightDefaultButton2 from "../Utilities/LightDefaultButton2"
+import LightDefaultButton2 from "../../Components/ui/lightDefaultButton2"
 
 const HeroSection = () => {
     return (

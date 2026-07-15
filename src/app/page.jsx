@@ -1,9 +1,9 @@
-import AboutSection from "@/Components/AboutSection";
-import ArchivedSection from "@/Components/ArchivedSection";
-import ContactSection from "@/Components/ContactSection";
-import HeroSection from "@/Components/HeroSection";
-import ProjectSection from "@/Components/ProjectSection";
-import SkillsSection from "@/Components/SkillsSection";
+import AboutSection from "@/views/home/aboutSection";
+import ArchivedSection from "@/views/home/archivedSection";
+import ContactSection from "@/views/home/contactSection";
+import HeroSection from "@/views/home/heroSection";
+import ProjectSection from "@/views/home/projectSection";
+import SkillsSection from "@/views/home/skillSection";
 
 export default function Home() {
   return (
