@@ -36,7 +36,7 @@ const SkillsSection = () => {
                     <div className="font-extralight text-sm tracking-[0.2em]">
                         FRONT END
                     </div>
-                    <SkillBadge skills={["Next.js", "Tailwind", "HTML", "CSS", "React", "Bootstap"]}></SkillBadge>
+                    <SkillBadge skills={["Next.js", "Tailwind", "HTML", "CSS", "React", "Bootstrap"]}></SkillBadge>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: 5 }}
