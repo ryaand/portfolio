@@ -36,7 +36,7 @@ const AboutSection = () => {
                         transition={{ duration: 0.7, ease: easeOut }}
                         className="grid grid-cols-2 gap-4 border-t pt-10 border-zinc-400/30">
                         <div>
-                            <div className="font-black text-2xl text-black">0+</div>
+                            <div className="font-black text-2xl text-black">1</div>
                             <div className="font-light">Projects</div>
                         </div>
                         <div>
