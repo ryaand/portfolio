@@ -49,7 +49,7 @@ const AboutSection = () => {
                         </div>
                         <div>
                             <div className="font-black text-2xl text-black">2026</div>
-                            <div className="font-light">High School Graduating</div>
+                            <div className="font-light">Informatics Engineering Student</div>
                         </div>
                     </motion.div>
                 </div>
