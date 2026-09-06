@@ -31,7 +31,7 @@ const HeroSection = () => {
                 <div className="text-center text-6xl font-black">
                     <p>Rian<br></br>Archive</p>
                 </div>
-                <div className="text-center w-[80%] lg:w-[30%] text-zinc-500 font-light tracking-wider text-[17px] max-w-2xl">
+                <div className="text-center w-[67%] lg:w-[30%] text-zinc-500 font-light tracking-wider text-md sm:text-[17px]">
                     An 18 years old front-end developer dedicated to continuous improvement, actively deepening skills in UI/UX design and full-stack development.
                 </div>
                 <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
