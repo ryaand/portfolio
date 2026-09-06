@@ -32,7 +32,7 @@ const HeroSection = () => {
                     <p>Rian<br></br>Archive</p>
                 </div>
                 <div className="text-center w-[67%] lg:w-[30%] text-zinc-500 font-light tracking-wider text-md sm:text-[17px]">
-                    An 18 years old front-end developer dedicated to continuous improvement, actively deepening skills in UI/UX design and full-stack development.
+                    An 18 years old front-end developer dedicated to continuous improvement.
                 </div>
                 <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
                     <a href="#projects"><DarkButton>Explore Projects</DarkButton></a>
