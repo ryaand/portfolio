@@ -9,8 +9,9 @@ const HeroSection = () => {
         <section
             className="h-screen w-screen max-w-7xl">
             <motion.div
-                initial={{ scale: 0.5, opacity: 0, y: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
+                initial={{ opacity: 0, y: 5 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ margin: "-200px", once: true }}
                 transition={{ duration: 0.7, ease: easeOut }}
                 className="flex flex-col w-screen h-screen justify-center items-center gap-7">
                 <div className="text-center font-extralight tracking-[0.5em] text-sm px-4">
