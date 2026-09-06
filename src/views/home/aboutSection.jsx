@@ -22,11 +22,21 @@ const AboutSection = () => {
                         transition={{ duration: 0.7, ease: easeOut }}
                         className="text-justify font-semibold">
                         I am an Informatics Engineering student at Politeknik Negeri Malang with a strong interest in Front-End Development. I enjoy creating clean, minimal, and user-focused interfaces — combining functionality, simplicity, and thoughtful design into meaningful digital experiences.
-                        <br></br>
-                        <br></br>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 5 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ margin: "-300px", once: true }}
+                        transition={{ duration: 0.7, ease: easeOut }}
+                        className="text-justify font-semibold">
                         As I continue my learning journey, I am constantly exploring new ideas, improving my problem-solving skills, and deepening my understanding of how design and technology work together. I believe that great products are built not only through technical expertise, but also through attention to detail and a genuine focus on users.
-                        <br></br>
-                        <br></br>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 5 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ margin: "-300px", once: true }}
+                        transition={{ duration: 0.7, ease: easeOut }}
+                        className="text-justify font-semibold">
                         Beyond personal growth, I am passionate about collaboration — learning from others, sharing ideas, and building impactful projects as part of a team. My goal is to contribute to products that create real value while growing alongside people who are equally driven to learn and innovate.
                     </motion.div>
                     <motion.div
