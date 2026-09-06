@@ -10,7 +10,7 @@ const AboutSection = () => {
                     <motion.div
                         initial={{ opacity: 0, x: -5 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ margin: "-100px" }}
+                        viewport={{ margin: "-100px", once: true }}
                         transition={{ duration: 0.7 }}
                         className="font-extralight tracking-[0.5em]">
                         ABOUT
@@ -18,7 +18,7 @@ const AboutSection = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 5 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ margin: "-300px" }}
+                        viewport={{ margin: "-300px", once: true }}
                         transition={{ duration: 0.7, ease: easeOut }}
                         className="text-justify font-semibold">
                         I am an Informatics Engineering student at Politeknik Negeri Malang with a strong interest in Front-End Development. I enjoy creating clean, minimal, and user-focused interfaces — combining functionality, simplicity, and thoughtful design into meaningful digital experiences.
@@ -32,7 +32,7 @@ const AboutSection = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 5 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ margin: "-200px" }}
+                        viewport={{ margin: "-200px", once: true }}
                         transition={{ duration: 0.7, ease: easeOut }}
                         className="grid grid-cols-2 gap-4 border-t pt-10 border-zinc-400/30">
                         <div>

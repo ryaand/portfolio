@@ -10,7 +10,7 @@ const ArchivedSection = () => {
                 <motion.div
                     initial={{ opacity: 0, x: -5 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ margin: "-100px" }}
+                    viewport={{ margin: "-100px", once: true }}
                     transition={{ duration: 0.7 }}
                     className="font-extralight tracking-[0.5em]">
                     ARCHIVED PROJECT
@@ -18,7 +18,7 @@ const ArchivedSection = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 5 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ margin: "-100px" }}
+                    viewport={{ margin: "-100px", once: true }}
                     transition={{ duration: 0.7, ease: easeOut }}
                     className="font-extralight tracking-wide">
                     You can see my archive repository on <a href="https://github.com/ryanarchv" className="underline font-bold">github</a> also.

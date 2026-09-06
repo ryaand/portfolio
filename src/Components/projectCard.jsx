@@ -11,7 +11,7 @@ const ProjectCard = ({ links, title, subtitle, description, stacks }) => {
                 <motion.div
                     initial={{ opacity: 0, y: 5 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ margin: "-200px" }}
+                    viewport={{ margin: "-200px", once: true }}
                     transition={{ duration: 0.7, ease: easeOut }}
                     className="hover:bg-black/5 active:bg-black/5 active:shadow-xl transition-all duration-450 rounded-2xl hover:shadow-xl gap-3 flex flex-col md:p-8 m-0 p-4">
                     <div className="flex gap-4 items-center">

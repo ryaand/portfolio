@@ -11,7 +11,7 @@ const SkillsSection = () => {
                 <motion.div
                     initial={{ opacity: 0, x: -5 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ margin: "-100px" }}
+                    viewport={{ margin: "-100px", once: true }}
                     transition={{ duration: 0.7 }}
                     className="font-extralight tracking-[0.5em]">
                     SKILLS
@@ -19,7 +19,7 @@ const SkillsSection = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 5 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ margin: "-200px" }}
+                    viewport={{ margin: "-200px", once: true }}
                     transition={{ duration: 0.7, ease: easeOut }}
                     className="flex flex-col gap-3">
                     <div className="font-extralight text-sm tracking-[0.2em]">
@@ -30,7 +30,7 @@ const SkillsSection = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 5 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ margin: "-200px" }}
+                    viewport={{ margin: "-200px", once: true }}
                     transition={{ duration: 0.7, ease: easeOut }}
                     className="flex flex-col gap-3">
                     <div className="font-extralight text-sm tracking-[0.2em]">
@@ -41,7 +41,7 @@ const SkillsSection = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 5 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ margin: "-200px" }}
+                    viewport={{ margin: "-200px", once: true }}
                     transition={{ duration: 0.7, ease: easeOut }}
                     className="flex flex-col gap-3">
                     <div className="font-extralight text-sm tracking-[0.2em]">
@@ -52,7 +52,7 @@ const SkillsSection = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 5 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ margin: "-200px" }}
+                    viewport={{ margin: "-200px", once: true }}
                     transition={{ duration: 0.7, ease: easeOut }}
                     className="flex flex-col gap-3">
                     <div className="font-extralight text-sm tracking-[0.2em]">
