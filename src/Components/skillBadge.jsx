@@ -4,7 +4,7 @@ const SkillBadge = ({ skills }) => {
     return (
         <div className="flex gap-2 flex-wrap">
             {skills.map((skill) => (
-                <LightDefaultButton2 key={skill}>
+                <LightDefaultButton2 key={skill.text}>
                     {skill.image}
                     {skill.text}
                 </LightDefaultButton2>
