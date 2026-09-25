@@ -23,7 +23,7 @@ const ArchivedSection = () => {
                     className="font-extralight tracking-wide px-8 sm:px-0">
                     You can see my archive repository on <a href="https://github.com/ryanarchv" className="underline font-bold">github</a> also.
                 </motion.div>
-                <div className="flex flex-col gap-10 md:gap-2">
+                <div className="flex flex-col gap-2">
                     <ProjectCard
                         links={"https://josuraa.github.io/Josura-Offc-Web/"}
                         title={"HTML CSS Website"}
