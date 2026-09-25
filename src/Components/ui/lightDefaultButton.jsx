@@ -8,7 +8,7 @@ const LightDefaultButton = ({ children }) => {
             initial={{ opacity: 0.5 }}
             whileHover={{ opacity: 1 }}
         >
-            <button className="bg-transparent border rounded-full px-4 py-2 cursor-pointer">
+            <button className="bg-transparent border rounded-lg px-4 py-2 cursor-pointer">
             {children}
             </button>
         </motion.div>
