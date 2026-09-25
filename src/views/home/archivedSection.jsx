@@ -6,13 +6,13 @@ import ProjectCard from "../../Components/projectCard"
 const ArchivedSection = () => {
     return (
         <section id="archived" className="w-screen flex justify-center items-center border-b border-zinc-400/30">
-            <div className="flex flex-col justify-between h-full w-full p-14 gap-10 max-w-3xl">
+            <div className="flex flex-col justify-between h-full w-full pt-14 px-6 sm:p-14 gap-10 max-w-5xl sm:max-w-3xl">
                 <motion.div
                     initial={{ opacity: 0, x: -5 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ margin: "-100px", once: true }}
                     transition={{ duration: 0.7 }}
-                    className="font-extralight tracking-[0.5em]">
+                    className="font-extralight tracking-[0.5em] pl-8 sm:pl-0">
                     ARCHIVED PROJECT
                 </motion.div>
                 <motion.div
@@ -20,7 +20,7 @@ const ArchivedSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ margin: "-100px", once: true }}
                     transition={{ duration: 0.7, ease: easeOut }}
-                    className="font-extralight tracking-wide">
+                    className="font-extralight tracking-wide px-8 sm:px-0">
                     You can see my archive repository on <a href="https://github.com/ryanarchv" className="underline font-bold">github</a> also.
                 </motion.div>
                 <div className="flex flex-col gap-10 md:gap-2">

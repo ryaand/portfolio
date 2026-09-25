@@ -36,7 +36,6 @@ const HeroSection = () => {
                 </div>
                 <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
                     <a href="#projects"><DarkButton>Explore Projects</DarkButton></a>
-                    <a href="#archived"><LightButton>Archived Projects</LightButton></a>
                 </div>
                 <div className="absolute bottom-7 text-center opacity-40 font-extralight tracking-[0.5em]">
                     |<br></br>
