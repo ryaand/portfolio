@@ -13,7 +13,7 @@ const ArchivedSection = () => {
                     viewport={{ margin: "-100px", once: true }}
                     transition={{ duration: 0.7 }}
                     className="font-extralight tracking-[0.5em] pl-8 sm:pl-0">
-                    ARCHIVED PROJECT
+                    ARCHIVED PROJECTS
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: 5 }}
