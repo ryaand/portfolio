@@ -3,7 +3,6 @@
 import { easeOut, motion } from "motion/react"
 import { TypeAnimation } from "react-type-animation"
 import DarkButton from "@/Components/ui/darkButton"
-import LightButton from "@/Components/ui/lightButton"
 
 const HeroSection = () => {
     return (
@@ -28,7 +27,7 @@ const HeroSection = () => {
                     repeat={Infinity}
                 />
                 </div>
-                <div className="text-center text-6xl font-black">
+                <div className="text-center text-5xl font-black sm:text-6xl">
                     <p>Rian<br></br>Archive</p>
                 </div>
                 <div className="text-center w-[67%] lg:w-[30%] text-zinc-500 font-light tracking-wider text-md sm:text-[17px]">
