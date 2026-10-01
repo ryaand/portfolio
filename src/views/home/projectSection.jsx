@@ -16,17 +16,17 @@ const ProjectSection = () => {
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: 5 }}
-                    whileInView={{ opacity: 0.5, y: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ margin: "-200px", once: true }}
                     transition={{ duration: 0.7, ease: easeOut }}
                     className="flex flex-col h-full items-center justify-center gap-2 zoom-90 sm:zoom-100">
-                    <div className="border border-black/20 p-2 rounded-md">
+                    <div className="border border-black/20 p-2 rounded-md opacity-50">
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="#000000"><g fill="none"><path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" /><path fill="#000000" d="M11.084 3.244a3 3 0 0 1 1.607-.063l.225.063L19.45 5.34c.19.063.361.181.486.346l.07.105l2.75 4.747a1 1 0 0 1-.44 1.407l-.12.047l-2.051.658v4.33a2 2 0 0 1-1.237 1.848l-.152.056l-5.84 1.872a3 3 0 0 1-1.607.063l-.225-.062l-5.84-1.873a2 2 0 0 1-1.382-1.743l-.007-.162V12.65l-2.051-.658a1 1 0 0 1-.617-1.338l.057-.116l2.75-4.747a1 1 0 0 1 .445-.406l.11-.045zM13 12.305v6.324l5.145-1.65v-3.687l-3.09.991a1 1 0 0 1-1.106-.353l-.064-.098zm-2 0l-.885 1.527a1 1 0 0 1-1.17.451l-3.09-.991v3.687L11 18.63zM5.32 7.49l-1.723 2.977l5.191 1.666l1.725-2.977zm13.36 0l-5.193 1.666l1.724 2.977l5.192-1.666zm-6.375-2.342a1 1 0 0 0-.49-.03l-.12.03L8.13 6.292L12 7.533l3.87-1.241z" /></g></svg>
                     </div>
                     <div className="flex justify-center w-fit items-center gap-2 text-lg text-black pt-4 font-semibold opacity-100">
                         No public projects published yet
                     </div>
-                    <div className="text-sm text-center w-3/4 sm:w-1/2">
+                    <div className="text-sm text-center w-3/4 sm:w-1/2 text-neutral-500">
                         Currently architecting upcoming case studies, design systems, and client software. New builds are scheduled for release soon.
                     </div>
                 </motion.div>
