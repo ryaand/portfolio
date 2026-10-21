@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <section className="w-screen flex justify-center items-center border-b border-zinc-400/30">
+        <section className="w-screen flex justify-center items-center border-t border-zinc-400/30">
             <div className="flex flex-col md:flex-row justify-between items-center w-full p-14 gap-5 max-w-3xl text-sm">
                 <div className="font-light">
                     © 2026 rian. All rights reserved.

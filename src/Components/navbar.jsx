@@ -32,11 +32,12 @@ const Navbar = () => {
                 <div className={navbarClass}>
                     <div className="md:hidden font-extrabold">rianArchive</div>
                     <ul className="gap-10 justify-center font-semibold hidden md:flex">
-                        <li className="opacity-60 hover:opacity-100 transition-opacity duration-300"><a href="#about">About</a></li>
-                        <li className="opacity-55 hover:opacity-100 transition-opacity duration-300"><a href="#skills">Skills</a></li>
-                        <li className="opacity-55 hover:opacity-100 transition-opacity duration-300"><a href="#projects">Projects</a></li>
-                        <li className="opacity-55 hover:opacity-100 transition-opacity duration-300"><a href="#archived">Archived</a></li>
-                        <li className="opacity-55 hover:opacity-100 transition-opacity duration-300"><a href="#contact">Contact</a></li>
+                        <li className="opacity-60 hover:opacity-100 transition-opacity duration-300"><a href="/#about">About</a></li>
+                        <li className="opacity-55 hover:opacity-100 transition-opacity duration-300"><a href="/#skills">Skills</a></li>
+                        <li className="opacity-55 hover:opacity-100 transition-opacity duration-300"><a href="/#projects">Projects</a></li>
+                        <li className="opacity-55 hover:opacity-100 transition-opacity duration-300"><a href="/blog">Blog</a></li>
+                        <li className="opacity-55 hover:opacity-100 transition-opacity duration-300"><a href="/#archived">Archived</a></li>
+                        <li className="opacity-55 hover:opacity-100 transition-opacity duration-300"><a href="/#contact">Contact</a></li>
                     </ul>
                     <button onClick={() => setToggleNavbar(toggleNavbar ? false : true)} className="md:hidden cursor-pointer rounded-md p-1">
                         <svg className={toggleNavbar ? "hidden" : "block"} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30">
@@ -57,19 +58,22 @@ const Navbar = () => {
                 className={toggleNavbar ? "md:hidden" : "hidden"}>
                 <div className="flex bg-zinc-400/10 backdrop-blur-sm border-zinc-400 border shadow-md m-6 rounded-2xl">
                     <ul className="flex flex-col w-full gap-1 py-4 px-4 justify-center text-sm font-semibold">
-                        <a href="#about">
+                        <a href="/#about">
                             <li className="opacity-55 hover:opacity-100 transition-all duration-150 hover:bg-zinc-300/25 py-2 px-6 rounded-lg">About</li>
                         </a>
-                        <a href="#skills">
+                        <a href="/#skills">
                             <li className="opacity-55 hover:opacity-100 transition-all duration-150 hover:bg-zinc-300/25 py-2 px-6 rounded-lg">Skills</li>
                         </a>
-                        <a href="#projects">
+                        <a href="/#projects">
                             <li className="opacity-55 hover:opacity-100 transition-all duration-150 hover:bg-zinc-300/25 py-2 px-6 rounded-lg">Projects</li>
                         </a>
-                        <a href="#archived">
+                        <a href="/blog">
+                            <li className="opacity-55 hover:opacity-100 transition-all duration-150 hover:bg-zinc-300/25 py-2 px-6 rounded-lg">Blog</li>
+                        </a>
+                        <a href="/#archived">
                             <li className="opacity-55 hover:opacity-100 transition-all duration-150 hover:bg-zinc-300/25 py-2 px-6 rounded-lg">Archived</li>
                         </a>
-                        <a href="#contact">
+                        <a href="/#contact">
                             <li className="opacity-55 hover:opacity-100 transition-all duration-150 hover:bg-zinc-300/25 py-2 px-6 rounded-lg">Contact</li>
                         </a>
                     </ul>

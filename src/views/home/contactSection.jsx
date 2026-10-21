@@ -33,7 +33,7 @@ const ContactSection = () => {
     console.log(result)
 
     return (
-        <section id="contact" className="w-screen flex justify-center items-center border-b border-zinc-400/30">
+        <section id="contact" className="w-screen flex justify-center items-center">
             <div className="flex flex-col justify-center h-full w-full p-14 gap-10 max-w-3xl">
                 <div className="font-extralight tracking-[0.5em]">
                     CONTACT
