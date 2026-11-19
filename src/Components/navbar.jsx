@@ -2,6 +2,7 @@
 
 import { easeInOut, motion } from "motion/react"
 import { useScroll, useMotionValueEvent } from "motion/react"
+import { usePathname } from "next/navigation"
 import { useState } from "react"
 
 const Navbar = () => {
@@ -15,9 +16,15 @@ const Navbar = () => {
         if (latest > 50) {
             setScrolled(true)
             if (latest >= 738.4000244140625 && latest < 1491) {
-                setActive("about")
+                setActive("About")
             } else if (latest >= 1492 && latest < 2111.800048828125) {
-                setActive("skills")
+                setActive("Skills")
+            } else if (latest >= 2112.800048828125 && latest < 2511.800048828125) {
+                setActive("Projects")
+            } else if (latest >= 2512.800048828125 && latest < 3451) {
+                setActive("Archived")
+            } else if (latest >= 3452 && latest < 3472) {
+                setActive("Contact")
             } else {
                 setActive("")
             }
@@ -30,8 +37,15 @@ const Navbar = () => {
     const isNavbarActive = scrolled || toggleNavbar
 
     const navbarClass = isNavbarActive ? `${topNavbar} backdrop-blur-md bg-zinc-400/10 shadow-md border-zinc-400 sm:border-none` : `${topNavbar} shadow-none`
-    const sectionNormal = "relative text-zinc-950/50 transition-all hover:opacity-100 duration-300 px-4 py-1 cursor-pointer rounded-full "
-    const sectionActive = " absolute bg-white text-zinc-950/75"
+    const navLink = [
+        { name: "About", link: "/#about" },
+        { name: "Skills", link: "/#skills" },
+        { name: "Projects", link: "/#projects" },
+        { name: "Blog", link: "/blog" },
+        { name: "Archived", link: "/#archived" },
+        { name: "Contact", link: "/#contact" },
+    ]
+    const pathname = usePathname()
 
     return (
         <motion.nav
@@ -43,20 +57,14 @@ const Navbar = () => {
                 <div className={navbarClass}>
                     <div className="md:hidden font-extrabold">rianArchive</div>
                     <ul className="gap-2 justify-center text-[13px] font-semibold hidden md:flex">
-                        <li className="relative text-zinc-950/50 transition-text duration-300 px-4 py-1 cursor-pointer rounded-full">
-                            {active === "about" ? <motion.div layoutId="nigga" className="absolute px-4 py-1 cursor-pointer rounded-full bg-white inset-0 -z-10 "></motion.div> : null}
-                            <a href="/#about">About</a></li>
-                        <li className="relative  text-zinc-950/50 transition-text duration-300 px-4 py-1 cursor-pointer rounded-full">
-                            {active === "skills" ? <motion.div layoutId="nigga" className="absolute px-4 py-1 cursor-pointer rounded-full bg-white inset-0 -z-10 "></motion.div> : null}
-                            <a href="/#skills">Skills</a></li>
-                        <li className="relative text-zinc-950/50 transition-text duration-300 px-4 py-1 cursor-pointer rounded-full">
-                            <a href="/#projects">Projects</a></li>
-                        <li className="relative text-zinc-950/50 transition-text duration-300 px-4 py-1 cursor-pointer rounded-full">
-                            <a href="/blog">Blog</a></li>
-                        <li className="relative text-zinc-950/50 transition-text duration-300 px-4 py-1 cursor-pointer rounded-full">
-                            <a href="/#archived">Archived</a></li>
-                        <li className="relative text-zinc-950/50 transition-text duration-300 px-4 py-1 cursor-pointer rounded-full">
-                            <a href="/#contact">Contact</a></li>
+                        {navLink.map((nav) => {
+                            return (
+                                <li className="relative text-zinc-950/50 hover:text-zinc-950/75 transition-text duration-300 px-4 py-1 cursor-pointer rounded-full">
+                                    {active === nav.name ? <motion.div layoutId="nigga" className="absolute px-4 py-1 cursor-pointer rounded-full bg-white inset-0 -z-10 "></motion.div> : null}
+                                    <a href={nav.link}>{nav.name}</a>
+                                </li>
+                            )
+                        })}
                     </ul>
                     <button onClick={() => setToggleNavbar(toggleNavbar ? false : true)} className="md:hidden cursor-pointer rounded-md p-1">
                         <svg className={toggleNavbar ? "hidden" : "block"} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30">
