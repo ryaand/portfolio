@@ -12,7 +12,6 @@ const Navbar = () => {
     const topNavbar = "flex justify-between items-center md:justify-center px-10 py-3 md:px-4 md:py-2 rounded-2xl md:rounded-full text-gray-600 transition-all ease-in-out duration-400 w-full md:w-fit border border-transparent sm:border-none"
     const [toggleNavbar, setToggleNavbar] = useState(false)
     const pathname = usePathname()
-    console.log(pathname)
     
     useMotionValueEvent(scrollY, "change", (latest) => {
         if (latest > 50) {
@@ -35,7 +34,6 @@ const Navbar = () => {
         } else {
             setScrolled(false)
         }
-        console.log(latest)
     })
 
     const isNavbarActive = scrolled || toggleNavbar
