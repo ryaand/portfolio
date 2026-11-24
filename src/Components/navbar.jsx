@@ -11,20 +11,24 @@ const Navbar = () => {
     const [active, setActive] = useState("")
     const topNavbar = "flex justify-between items-center md:justify-center px-10 py-3 md:px-4 md:py-2 rounded-2xl md:rounded-full text-gray-600 transition-all ease-in-out duration-400 w-full md:w-fit border border-transparent sm:border-none"
     const [toggleNavbar, setToggleNavbar] = useState(false)
-
+    const pathname = usePathname()
+    console.log(pathname)
+    
     useMotionValueEvent(scrollY, "change", (latest) => {
         if (latest > 50) {
             setScrolled(true)
-            if (latest >= 738.4000244140625 && latest < 1491) {
+            if (latest >= 600 && latest < 1300) {
                 setActive("About")
-            } else if (latest >= 1492 && latest < 2111.800048828125) {
+            } else if (latest >= 1300 && latest < 1900) {
                 setActive("Skills")
-            } else if (latest >= 2112.800048828125 && latest < 2511.800048828125) {
+            } else if (latest >= 1900 && latest < 2511.800048828125) {
                 setActive("Projects")
-            } else if (latest >= 2512.800048828125 && latest < 3451) {
+            } else if (latest >= 2512.800048828125 && latest < 3112) {
                 setActive("Archived")
-            } else if (latest >= 3452 && latest < 3472) {
+            } else if (latest >= 3112 && latest < 5000) {
                 setActive("Contact")
+            } else if (pathname === "/blog") {
+                setActive("Blog")
             } else {
                 setActive("")
             }
@@ -45,7 +49,6 @@ const Navbar = () => {
         { name: "Archived", link: "/#archived" },
         { name: "Contact", link: "/#contact" },
     ]
-    const pathname = usePathname()
 
     return (
         <motion.nav
